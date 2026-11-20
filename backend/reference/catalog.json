@@ -1,0 +1,531 @@
+{
+  "E01": {
+    "filename": "E01_ledgerone_api_access.csv",
+    "original_sha256": "6ea011a2071a73a466a000f875a2597ad2291e31be2ec647df3d031517b2498e",
+    "columns": [
+      "ts_utc",
+      "request_id",
+      "api_key_id",
+      "caller_ip",
+      "user_agent",
+      "endpoint",
+      "method",
+      "records_returned",
+      "status"
+    ]
+  },
+  "E02": {
+    "filename": "E02_helpdeskr_audit_log.csv",
+    "original_sha256": "462713213ee44b1de3c9192c75860932567fbb22b3e0aa1cde014841597e84e2",
+    "columns": [
+      "ts_local",
+      "event_id",
+      "actor",
+      "actor_type",
+      "action",
+      "object_id",
+      "source_ip",
+      "result",
+      "details"
+    ]
+  },
+  "E03": {
+    "filename": "E03_sso_signin_log.csv",
+    "original_sha256": "e02d293d5ef58eeadfeb3b30f344d67f33887c0748854eec2b91ac0874802fbb",
+    "columns": [
+      "ts_utc",
+      "event_id",
+      "user",
+      "source_ip",
+      "city",
+      "auth_method",
+      "mfa_result",
+      "device_id",
+      "result",
+      "failure_reason"
+    ]
+  },
+  "E04": {
+    "filename": "E04_connected_software_register.json",
+    "original_sha256": "12e4d62781391f26db8d0412a49981dae225c9aa56d66031c1c41d8976cb5726"
+  },
+  "E05": {
+    "filename": "E05_bluevault_access_log.csv",
+    "original_sha256": "22fa8ea87b587af1e27711ec10d577b04ffcac48c0eca4c4b410ac32df27fd9e",
+    "columns": [
+      "epoch_s",
+      "event_id",
+      "principal",
+      "source_ip",
+      "action",
+      "path",
+      "bytes",
+      "result"
+    ]
+  },
+  "E06": {
+    "filename": "E06_billing_alert_and_invoice.pdf",
+    "original_sha256": "8fca8fd861d532d5a357b78742582f88bda0a50127e32f277712556797258e26",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "HelpDeskr Billing Notice\n   From                  billing@helpdeskr.example\n\n   To                    accounts@harborfinch.example\n\n   Date                  Mon, 24 Aug 2026, 14:05 IST\n\n   Subject               Usage alert: Bulk Export add-on allowance exceeded\n\n Dear Harbor & Finch Freight,\n Your account has used more Bulk Export jobs this billing period than your plan includes. Usage above the included\n allowance is charged per job at the end of the period.\n\n   Item                                Included            Used so far (period to 24 Aug)               Rate above allowance\n\n   Bulk Export jobs                    5                   13                                           INR 2,500 per job\n\n A job is counted when it is created, whether or not the export file is later downloaded or deleted. A per-job usage breakdown is available\n to workspace administrators in Settings. It is not included in this notice.\n\n\n\n Internal forward\n   From                  Madhavi Sundar (Finance Manager)\n\n   To                    it-helpdesk@harborfinch.example\n\n   Date                  Mon, 24 Aug 2026, 16:40 IST\n\n   Note                  Can someone tell me why we are getting an export overage? Support only needs one export a week as\n                         far as I know. Please do not spend long on it, I just need a line for the month-end accrual.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                            Page 1"
+        }
+      ],
+      [
+        "p2",
+        {
+          "text": "HelpDeskr Invoice (Extract)\n   Invoice no.                    INV-HD-2026-0831\n\n   Issue date                     01 Sep 2026\n\n   Billing period                 01 Aug 2026 to 31 Aug 2026\n\n   Customer                       Harbor & Finch Freight Pvt. Ltd.\n\n   Description                                                          Qty            Unit price (INR)   Amount (INR)\n\n   Support platform seats (Professional)                                50             4,200              210,000\n\n   Bulk Export jobs, included allowance                                 5              0                  0\n\n   Bulk Export jobs, above allowance (14 used)                          9              2,500              22,500\n\n   Subtotal                                                                                               232,500\n\n   GST 18%                                                                                                41,850\n\n   Total due                                                                                              274,350\n\n Previous period (July 2026): 4 Bulk Export jobs used, within allowance, no overage.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                               Page 2"
+        }
+      ]
+    ]
+  },
+  "E07": {
+    "filename": "E07_onboarding_review_file.pdf",
+    "original_sha256": "228866c549c9855047d3996175a96cbd91724de8a1ce0788abb44b3de4d4ab3c",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Third-Party Due-Diligence File\n Vendor: TallyBridge Software Pvt. Ltd. | Product: TallyBridge Connect (invoice and ticket sync)\n\n   Review date                          05 June 2024\n\n   Requested by                         Finance IT\n\n   Reviewed by                          Pradeep Shah, IT Officer\n\n   Approved by                          Madhavi Sundar, Finance Manager\n\n   Outcome                              APPROVED. Vendor risk rating: LOW\n\n   Integration scope requested          LedgerOne (invoices, vendors, payments) and HelpDeskr (tickets), nightly sync\n\n   Next scheduled review                June 2025 (annual)\n\n\n 1. Independent assurance supplied by the vendor\n   Item                                 Detail\n\n   SOC 2 Type 2 report                  Period 01 Jul 2023 to 31 Mar 2024. Opinion: unqualified.\n\n   Stated scope                         Production application environment and supporting infrastructure.\n\n   Carve-outs (page 7 of report)        Corporate IT, source code management systems, and the credential vault service\n                                        operated by a subservice organisation are excluded from the scope of this report.\n\n   ISO 27001                            Not certified. Vendor states certification is in progress, expected 2025.\n\n   Penetration test                     Last test November 2023. Summary available on request. Summary not requested.\n\n\n 2. Vendor questionnaire (answers as supplied by the vendor)\n   No.        Question                                                      Vendor answer\n\n   Q9         Is MFA enforced for staff with production access?             Yes for production. Recommended for other systems.\n\n   Q14        Are customer credentials encrypted at rest?                   Yes.\n\n   Q18        Is source code protected with access reviews?                 Yes, reviewed periodically.\n\n   Q22        Do you permit customer security audits?                       Reviewed on request.\n\n   Q25        How quickly will you notify customers of a security           Without undue delay.\n              incident?\n\n   Q27        How can customers limit the access an integration key         Customers can restrict keys by IP address and scope\n              has?                                                          inside their own systems.\n\n   Q30        Do you use subprocessors?                                     Yes. List available on request.\n\n\n 3. Reviewer notes\n Questionnaire answers were accepted as supplied. No follow-up questions were raised. Assurance was assessed\n as sufficient for a low-risk convenience integration. Security team sign-off: not recorded. CISO review: not\n recorded.\n\n 4. Renewal\n Annual review due June 2025. Status: no record of completion in this file.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                  Page 1"
+        }
+      ]
+    ]
+  },
+  "E08": {
+    "filename": "E08_contract_excerpt.pdf",
+    "original_sha256": "602ca3544e4aa85c5a85f79a233b23a50fb08fcfafe7f4b45f6fdae862fecef4",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Master Services Agreement (Excerpt)\n Agreement ref. TB-HF-2024-017 | Effective date: 10 June 2024 | Parties: TallyBridge Software Pvt. Ltd. (Vendor) and Harbor & Finch\n Freight Pvt. Ltd. (Customer)\n Only the clauses supplied by Legal for this review are reproduced. Other clauses are not included.\n\n\n 5. Credentials and access\n 5.1 The Customer will provide the Vendor with the API credentials needed to deliver the Services. The Vendor will\n store such credentials in encrypted form.\n 5.3 The Customer is responsible for configuring any access restrictions, expiry settings, or scope limits offered by\n its own systems.\n\n 7. Security incidents\n 7.2 The Vendor will notify the Customer of a confirmed security incident affecting Customer Data without undue\n delay.\n 7.4 The Vendor will take reasonable steps to investigate and remediate. The Vendor is not required to disclose the\n technical details of its internal systems.\n\n 9. Assurance and audit\n 9.1 The Customer may review the Vendor's published security certifications and reports. No on-site or technical\n audit right is granted.\n\n 11. Subprocessors\n 11.4 The Vendor may appoint or replace subprocessors without prior notice to the Customer, provided the\n subprocessor is bound by terms no less protective than this Agreement.\n\n 14. Liability\n 14.1 The Vendor's total liability is limited to the fees paid in the twelve months preceding the claim.\n 14.3 The Vendor is not liable for losses arising from credentials the Customer failed to restrict as described in\n clause 5.3.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                     Page 1"
+        }
+      ]
+    ]
+  },
+  "E09": {
+    "filename": "E09_risk_register_extract.xlsx",
+    "original_sha256": "2d96301ad5d7566d39e8d0c0bbdebfa7fee4cf07a8eece6ea322498a303710fc",
+    "extract": [
+      [
+        "Risk Register!2",
+        {
+          "Risk ID": "R-004",
+          "Risk title": "Ransomware on shared file servers",
+          "Category": "Cyber",
+          "Owner": "IT",
+          "Likelihood (1-5)": 3,
+          "Impact (1-5)": 5,
+          "Score": "=E2*F2",
+          "Rating": "=IF(G2>=15,\"High\",IF(G2>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "IT Security Administrator",
+          "Last reviewed": "2026-02-10",
+          "Next review due": "2026-08-10",
+          "Notes": "Offline backups in place"
+        }
+      ],
+      [
+        "Risk Register!3",
+        {
+          "Risk ID": "R-009",
+          "Risk title": "Warehouse scanner firmware vulnerabilities",
+          "Category": "Cyber",
+          "Owner": "Operations IT",
+          "Likelihood (1-5)": 3,
+          "Impact (1-5)": 3,
+          "Score": "=E3*F3",
+          "Rating": "=IF(G3>=15,\"High\",IF(G3>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "IT Security Administrator",
+          "Last reviewed": "2026-01-20",
+          "Next review due": "2026-07-20",
+          "Notes": null
+        }
+      ],
+      [
+        "Risk Register!4",
+        {
+          "Risk ID": "R-012",
+          "Risk title": "Loss of key carrier contract",
+          "Category": "Commercial",
+          "Owner": "Operations",
+          "Likelihood (1-5)": 2,
+          "Impact (1-5)": 4,
+          "Score": "=E4*F4",
+          "Rating": "=IF(G4>=15,\"High\",IF(G4>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Accept",
+          "Status": "Accepted",
+          "Approved by": "General Manager",
+          "Last reviewed": "2026-03-01",
+          "Next review due": "2027-03-01",
+          "Notes": null
+        }
+      ],
+      [
+        "Risk Register!5",
+        {
+          "Risk ID": "R-015",
+          "Risk title": "Phishing leading to payment fraud",
+          "Category": "Cyber",
+          "Owner": "Finance",
+          "Likelihood (1-5)": 4,
+          "Impact (1-5)": 4,
+          "Score": "=E5*F5",
+          "Rating": "=IF(G5>=15,\"High\",IF(G5>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "Finance Manager",
+          "Last reviewed": "2026-04-18",
+          "Next review due": "2026-10-18",
+          "Notes": "Dual approval on payment runs"
+        }
+      ],
+      [
+        "Risk Register!6",
+        {
+          "Risk ID": "R-018",
+          "Risk title": "Staff accounts not disabled after exit",
+          "Category": "Access",
+          "Owner": "HR / IT",
+          "Likelihood (1-5)": 3,
+          "Impact (1-5)": 3,
+          "Score": "=E6*F6",
+          "Rating": "=IF(G6>=15,\"High\",IF(G6>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "IT Security Administrator",
+          "Last reviewed": "2025-10-05",
+          "Next review due": "2026-04-05",
+          "Notes": "See audit finding 3"
+        }
+      ],
+      [
+        "Risk Register!7",
+        {
+          "Risk ID": "R-022",
+          "Risk title": "Data centre power failure",
+          "Category": "Operational",
+          "Owner": "IT",
+          "Likelihood (1-5)": 2,
+          "Impact (1-5)": 4,
+          "Score": "=E7*F7",
+          "Rating": "=IF(G7>=15,\"High\",IF(G7>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Mitigated",
+          "Approved by": "General Manager",
+          "Last reviewed": "2026-05-02",
+          "Next review due": "2027-05-02",
+          "Notes": null
+        }
+      ],
+      [
+        "Risk Register!8",
+        {
+          "Risk ID": "R-025",
+          "Risk title": "Customer data leak through support tickets",
+          "Category": "Data",
+          "Owner": "Support Ops",
+          "Likelihood (1-5)": 4,
+          "Impact (1-5)": 4,
+          "Score": "=E8*F8",
+          "Rating": "=IF(G8>=15,\"High\",IF(G8>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "Support Ops Manager",
+          "Last reviewed": "2025-09-20",
+          "Next review due": "2026-03-20",
+          "Notes": "Training planned. Review overdue"
+        }
+      ],
+      [
+        "Risk Register!9",
+        {
+          "Risk ID": "R-029",
+          "Risk title": "Misuse of storage access key issued to customer partner",
+          "Category": "Access",
+          "Owner": "Support Ops",
+          "Likelihood (1-5)": 3,
+          "Impact (1-5)": 4,
+          "Score": "=E9*F9",
+          "Rating": "=IF(G9>=15,\"High\",IF(G9>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "Support Ops Manager",
+          "Last reviewed": "2025-02-18",
+          "Next review due": "2025-09-30",
+          "Notes": "Rotate key annually. Not done. Review overdue"
+        }
+      ],
+      [
+        "Risk Register!10",
+        {
+          "Risk ID": "R-031",
+          "Risk title": "Vendor connector compromise (TallyBridge)",
+          "Category": "Third party",
+          "Owner": "Finance IT",
+          "Likelihood (1-5)": 2,
+          "Impact (1-5)": 3,
+          "Score": "=E10*F10",
+          "Rating": "=IF(G10>=15,\"High\",IF(G10>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Accept",
+          "Status": "Accepted",
+          "Approved by": "Finance Manager",
+          "Last reviewed": "2024-06-05",
+          "Next review due": "2025-06-30",
+          "Notes": "Accepted at onboarding. Review overdue"
+        }
+      ],
+      [
+        "Risk Register!11",
+        {
+          "Risk ID": "R-033",
+          "Risk title": "Cloud billing overspend",
+          "Category": "Financial",
+          "Owner": "Finance",
+          "Likelihood (1-5)": 3,
+          "Impact (1-5)": 2,
+          "Score": "=E11*F11",
+          "Rating": "=IF(G11>=15,\"High\",IF(G11>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Accept",
+          "Status": "Accepted",
+          "Approved by": "Finance Manager",
+          "Last reviewed": "2026-06-01",
+          "Next review due": "2026-12-01",
+          "Notes": null
+        }
+      ],
+      [
+        "Risk Register!12",
+        {
+          "Risk ID": "R-036",
+          "Risk title": "Legacy ERP end of vendor support",
+          "Category": "Operational",
+          "Owner": "Finance IT",
+          "Likelihood (1-5)": 2,
+          "Impact (1-5)": 4,
+          "Score": "=E12*F12",
+          "Rating": "=IF(G12>=15,\"High\",IF(G12>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "Finance Manager",
+          "Last reviewed": "2026-03-15",
+          "Next review due": "2026-09-15",
+          "Notes": null
+        }
+      ],
+      [
+        "Risk Register!13",
+        {
+          "Risk ID": "R-040",
+          "Risk title": "Key-person dependency in IT",
+          "Category": "Operational",
+          "Owner": "IT",
+          "Likelihood (1-5)": 4,
+          "Impact (1-5)": 3,
+          "Score": "=E13*F13",
+          "Rating": "=IF(G13>=15,\"High\",IF(G13>=8,\"Medium\",\"Low\"))",
+          "Treatment": "Mitigate",
+          "Status": "Open",
+          "Approved by": "IT Security Administrator",
+          "Last reviewed": "2026-02-02",
+          "Next review due": "2026-08-02",
+          "Notes": null
+        }
+      ],
+      [
+        "Rating Key!1",
+        {
+          "definition": "Score = Likelihood x Impact"
+        }
+      ],
+      [
+        "Rating Key!2",
+        {
+          "definition": "High: 15 or above"
+        }
+      ],
+      [
+        "Rating Key!3",
+        {
+          "definition": "Medium: 8 to 14"
+        }
+      ],
+      [
+        "Rating Key!4",
+        {
+          "definition": "Low: 7 or below"
+        }
+      ],
+      [
+        "Rating Key!5",
+        {
+          "definition": "Review frequency: High every 3 months, Medium every 6 months, Low every 12 months (guideline, not always followed)"
+        }
+      ],
+      [
+        "Rating Key!6",
+        {
+          "definition": "Register last exported: 02 September 2026"
+        }
+      ]
+    ]
+  },
+  "E10": {
+    "filename": "E10_it_security_policy_v2_1.pdf",
+    "original_sha256": "5da640d877ecfe5c9dadf6890ea0eb80e77a1740b1fc91fd9308144f125a8265",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Third-Party and Integration Security Policy\n   Document no.                 TPS-POL-02\n\n   Version                      2.1\n\n   Effective                    01 January 2025\n\n   Policy owner                 Chief Information Security Officer (position vacant since September 2025; IT Security\n                                Administrator acting)\n\n   Applies to                   All third-party integrations with access to financial or customer data\n\n\n 1. Risk classification\n Any vendor with write access to a financial system, or read access to customer data, is classified HIGH risk.\n\n 2. Integration credential requirements\n 2.1 Integration credentials must be restricted to the vendor's published IP addresses wherever the platform\n supports it.\n 2.2 Integration credentials must expire within 90 days and be rotated on expiry.\n 2.3 Credentials must carry only the minimum scope needed. 'All modules' or 'admin' scope requires a documented\n justification.\n\n 3. Vendor review\n 3.1 HIGH risk vendors must be reviewed at least every 12 months, including a check that vendor assurance covers\n the systems that hold or protect Harbor & Finch credentials.\n\n 4. Monitoring\n 4.1 Alerts must be configured for bulk exports and for deletion of export jobs by integration accounts on systems\n holding financial or customer data.\n\n 5. Handling credentials in support work\n 5.1 Staff must not ask customers or partners to paste credentials or keys into tickets or chat. A secure\n credential-submission link must be used.\n 5.2 Any credential found in a ticket must be reported to IT Security and rotated.\n\n 6. Exceptions\n 6.1 Exceptions require written approval of the CISO and may last no longer than six months.\n\n 7. Transition\n 7.1 Integrations created before 01 January 2025 must meet sections 2 and 4 by 01 January 2026.\n\n Version history\n   Version        Date                       Change\n\n   2.0            03 Aug 2023                Initial policy\n\n   2.1            01 Jan 2025                Added sections 2.2, 4.1, 5 and 7 following board review\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                              Page 1"
+        }
+      ]
+    ]
+  },
+  "E11": {
+    "filename": "E11_internal_audit_report_IA_2025_09.pdf",
+    "original_sha256": "2841474e6765a0cfe6050d57ac7b9fdbe3178b97175f83ef01744f64c548305f",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Internal Audit Report IA-2025-09\n Information Systems Access and Integration Controls Review\n   Report date                   12 September 2025\n\n   Audit period                  01 March 2025 to 31 August 2025\n\n   Prepared by                   Internal Audit\n\n   Distribution                  Audit Committee, Finance Manager, IT Security Administrator\n\n   Scope                         LedgerOne, HelpDeskr and BlueVault access controls, including connected integrations.\n                                 Third-party vendors' own environments were out of scope.\n\n\n Summary of findings\n   No.     Finding                                  Rating     Management response                Target date   Status at report\n                                                                                                                date\n\n   1       Staff MFA enforced across all user       Info       None required.                     n/a           Closed\n           accounts. No exceptions found.\n\n   2       11 of 50 sampled tickets contained       High       Training to be delivered.          31 Dec 2025 Open\n           pasted credentials or keys. Support                 Secure submission link under\n           staff routinely ask customers to paste              evaluation.\n           configuration into tickets.\n\n   3       Departed-employee accounts not           Medium     HR and IT to reconcile monthly.    31 Oct 2025   Open\n           always disabled promptly. Roster and\n           identity records disagree.\n\n   4       Integration keys do not expire. 5 of 8   High       IT will implement rotation after   31 Dec 2025 Open\n           integration credentials have no expiry              confirming compatibility with\n           date. The same 5 are not restricted by              TallyBridge. Finance IT to\n           IP address.                                         engage the vendor next\n                                                               quarter.\n\n   5       Two integration credentials unused for   Medium     To be reviewed during Q4.          31 Dec 2025 Open\n           more than six months remain active.\n\n   6       No alerting exists for bulk exports or   High       Monitoring use cases to be         31 Mar 2026   Open\n           export deletion by integration accounts.            defined once a SIEM is\n           Logs are retained but not monitored.                procured.\n\n   7       Vendor risk assessments are not          Medium     Review calendar to be created.     30 Nov 2025 Open\n           repeated annually. Two HIGH-risk\n           vendors have no review since\n           onboarding.\n\n\n Follow-up\n A follow-up review of open findings was scheduled for March 2026. Status of that review is not recorded in this\n report.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                   Page 1"
+        }
+      ]
+    ]
+  },
+  "E12": {
+    "filename": "E12_email_notice.pdf",
+    "original_sha256": "10b4759454fc3513faa9cf3814276af5367389f1a27138a1c7d23b9a90be5e53",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Email: Notice from TallyBridge Software\n   From                  security-notices@tallybridge.example\n\n   To                    accounts@harborfinch.example\n\n   Cc                    (none)\n\n   Date                  Fri, 21 Aug 2026, 19:32 IST\n\n   Subject               Important: precautionary update regarding customer connections\n\n Dear Customer,\n Our monitoring identified unusual activity affecting a limited subset of customer connections to TallyBridge\n Connect. As a precaution we are in the process of rotating credentials for the affected connections.\n There is no evidence that customer data was accessed in a way that affects business operations. No action is\n required from you at this time.\n We take the security of your data seriously and will contact you again if we have further information to share.\n Please do not forward this notice outside your organisation.\n Regards,\n Customer Trust Team, TallyBridge Software\n\n Delivery note: this message was addressed to the billing contact on record. No copy was sent to a security or IT contact.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                   Page 1"
+        }
+      ]
+    ]
+  },
+  "E13": {
+    "filename": "E13_support_team_chat_export.json",
+    "original_sha256": "c72384c51b155f2624ae0c5c47bdbbb7369e2af29677ca558108b3a6e0a33507"
+  },
+  "E14": {
+    "filename": "E14_staff_roster.csv",
+    "original_sha256": "3c94b5141079efae39d8521265a7d291ec20d6e490cd51178f42b7839d0d4afa",
+    "columns": [
+      "employee_id",
+      "username",
+      "full_name",
+      "department",
+      "role",
+      "status",
+      "manager",
+      "hire_date",
+      "termination_date",
+      "notes"
+    ]
+  },
+  "E15": {
+    "filename": "E15_network_link_flow_log.csv",
+    "original_sha256": "c0f38cbc2b5b30f3ac62cee3ed353ca13962b5d08c71250e437e5ece97235a8e",
+    "columns": [
+      "ts_utc",
+      "flow_id",
+      "src_ip",
+      "src_label",
+      "dst_system",
+      "dst_port",
+      "bytes_out",
+      "bytes_in",
+      "tunnel_id",
+      "result"
+    ]
+  },
+  "E16": {
+    "filename": "E16_followup_email_notice.pdf",
+    "original_sha256": "4912f461a3dd29e5601f8a1edfdf9651b1e76debf901402ad955faa6ea731b4c",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "Email: Update from TallyBridge Software\n   From                  security-notices@tallybridge.example\n\n   To                    accounts@harborfinch.example; it-security@harborfinch.example\n\n   Date                  Fri, 28 Aug 2026, 18:10 IST\n\n   Subject               Update: investigation findings and next steps\n\n Dear Customer,\n We have completed our investigation of the activity reported in our notice of 21 August. Our findings are\n summarised below.\n\n What we found\n 1. Unauthorised requests were made using a customer connection credential on 11 and 12 August 2026 only.\n 2. The access was limited to support ticket metadata. We have found no evidence that finance records or stored\n files were accessed.\n 3. All temporary export files created during the activity have been removed.\n 4. The activity originated entirely from outside our network. No systems inside our environment or on the\n private link were involved.\n\n What we did\n 5. Affected credentials were rotated on 24 August 2026.\n 6. A list of indicators is attached to assist your review (file: indicator_list.csv).\n\n What is changing\n 7. From 1 September 2026, TallyBridge Connect will also synchronise vendor contact details (email and phone)\n between your systems, using the existing connection. No action is needed.\n We consider this matter closed. Thank you for your patience.\n Regards,\n Customer Trust Team, TallyBridge Software\n\n Please do not forward this notice outside your organisation.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional."
+        }
+      ]
+    ]
+  },
+  "E17": {
+    "filename": "E17_indicator_list.csv",
+    "original_sha256": "c80a6a7d991934fe1ce679f4979dd7d8d32eba76508a6067494c6427e6f38692",
+    "columns": [
+      "indicator",
+      "type",
+      "first_seen",
+      "last_seen",
+      "confidence",
+      "vendor_note"
+    ]
+  },
+  "E18": {
+    "filename": "E18_ledgerone_api_access_1_to_7_sep.csv",
+    "original_sha256": "1e4790d060acdd72c44da34e9848844675b04032342500e4be72a3522c9bc047",
+    "columns": [
+      "ts_utc",
+      "request_id",
+      "api_key_id",
+      "caller_ip",
+      "user_agent",
+      "endpoint",
+      "method",
+      "records_returned",
+      "status"
+    ]
+  },
+  "E19": {
+    "filename": "E19_vendor_master_change_log.csv",
+    "original_sha256": "f86bb5617a22b722bdfbd250a7b465876bd9e95847989ff36777f2bdaffe46f2",
+    "columns": [
+      "ts_utc",
+      "change_id",
+      "vendor_id",
+      "vendor_name",
+      "field",
+      "old_value",
+      "new_value",
+      "changed_by",
+      "channel",
+      "approval_ref",
+      "source_ip",
+      "request_id"
+    ]
+  },
+  "E20": {
+    "filename": "E20_public_records_pack.pdf",
+    "original_sha256": "418dcdda9b4a1ed8322488d3f854198c946b6e27ead841d49f2ab5b4bc89b161",
+    "extract": [
+      [
+        "p1",
+        {
+          "text": "E20 Public Records Pack\n Saved copies of public information about the outside company and the internet addresses in our logs, collected by\n Finance IT on 2 September 2026. Pages may have changed since they were saved. Nothing here has been\n verified. No internet access is needed to use this pack.\n\n  Item            What it is\n\n  A               The company's public security page\n\n  B               Its public status page history\n\n  C               Its public release notes\n\n  D               An archived job advert\n\n  E               A public forum thread\n\n  F               Domain registration records\n\n  G               Internet address registration lookups\n\n\n A. Public security page: TallyBridge Software\n Source: tallybridge.example/trust. Saved 2 Sep 2026, page last updated 14 Mar 2026.\n\n Independent audits. SOC 2 Type 2, repeated every year. ISO 27001 certified since February 2025.\n Encryption. Customer credentials are encrypted at rest and in transit.\n Staff access. Multi-factor authentication is required for production access.\n Build and release. \"Our release pipeline is isolated from production.\"\n Subprocessors. Cloud hosting: CloudNine Hosting. Key management: VaultWorks. Source code hosting: Gitly. A\n current list is available on request.\n Incidents. \"We will notify affected customers without undue delay.\"\n\n B. Public status page history: TallyBridge Software\n Source: status.tallybridge.example. Saved 2 Sep 2026.\n\n  When (UTC)                       Status          Notice\n\n  16 Aug 2026, 18:00 to 21:00      Completed       Re-provisioning of internal build host tb-build-02. No customer impact\n                                                   expected.\n\n  21 Jul 2026                      Resolved        Elevated latency in the nightly sync. About 45 minutes.\n\n  10 Jul 2026, 01:30 to 03:00      Completed       Release 3.5.0 rollout. Customers may see the nightly sync start earlier.\n\n  9 Jul 2026, 22:00 to 23:00       Completed       Scheduled maintenance on the sandbox environment.\n\n  27 Jun 2026                      Completed       Certificate renewal.\n\n  1 Aug to 2 Sep 2026              n/a             No incidents reported. Uptime for the period: 99.98%.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                    Page 1"
+        }
+      ],
+      [
+        "p2",
+        {
+          "text": "C. Public release notes: TallyBridge Connect\n Source: docs.tallybridge.example/releases. Saved 2 Sep 2026.\n\n  Version         Date                         Notes\n\n  3.6.0           1 Sep 2026                   Vendor contact detail sync (email and phone) between connected systems.\n\n  3.5.0           10 Jul 2026                  Improved batching. The nightly sync now starts at 01:30 UTC (previously 02:00\n                                               UTC). The client identifies itself as TallyBridge-Sync/3.5.0. Version 3.4.x is retired\n                                               with this release.\n\n  3.4.1           12 Mar 2026                  Bug fixes.\n\n D. Archived job advert\n Source: careers.tallybridge.example (archived copy). Saved 2 Sep 2026, advert posted 12 Jun 2026.\n\n Security Engineer (Build and Access), Bengaluru.\n   You will introduce regular access reviews for our source repositories, scan our build pipelines for stored secrets,\n   take ownership of the integration with our key management service, and help us reduce long-lived credentials.\n   Our environment: source code on Gitly, build servers tb-build-01 to tb-build-03, cloud hosting on CloudNine, keys\n   held in VaultWorks.\n\n E. Public forum thread\n Source: devsupport-exchange.example, board Integrations. Saved 2 Sep 2026.\n\n  Date          User                        Post\n\n  3 Aug         ravi_k                      Did the TallyBridge nightly window change again? Ours seems to run at a different\n                                            time.\n\n  7 Aug         mbhatt                      How do I map credit notes in the invoice sync?\n\n  14 Aug        fernbridge_it               Anyone seeing export jobs created and removed overnight on a ticketing system that\n                                            TallyBridge connects to? We did not start them.\n\n  15 Aug        TB_Support (vendor          Thanks for reporting. We are not aware of any issue affecting the Connect service.\n                staff)                      Please open a support ticket.\n\n  17 Aug        kaveri_dev                  Possibly related: our finance API log shows requests with our TallyBridge key from\n                                            an address we do not recognise on 12 Aug.\n\n  19 Aug        ravi_k                      Is version 3.4.1 still supported? One of our servers still reports it.\n\n  20 Aug        TB_Support (vendor          3.4.x was retired on 10 July. Please upgrade.\n                staff)\n\n  22 Aug        mbhatt                      Thanks, the credit note mapping works now.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                       Page 2"
+        }
+      ],
+      [
+        "p3",
+        {
+          "text": "F. Domain registration records\n Source: public registration lookup. Saved 2 Sep 2026.\n\n  Domain                       Registered        Registrar        Registrant                  Notes\n\n  tallybridge.example          11 Mar 2019       NameCircle       TallyBridge Software        Company website and email. Name\n                                                                  Pvt. Ltd.                   servers at CloudNine\n\n  tallybridge-connect.exam     4 Feb 2021        NameCircle       TallyBridge Software        Product site\n  ple                                                             Pvt. Ltd.\n\n  tallybridge-support.exam     19 Aug 2026       QuickReg         Withheld for privacy        No website content found when\n  ple                                                                                         saved. Name servers at a low-cost\n                                                                                              host\n\n G. Internet address registration lookups\n Source: public address registry. Saved 2 Sep 2026.\n\n  Address range              Registered to               Type                       Notes\n\n  198.18.0.0/16              SouthNet Broadband,         Residential and            Dynamic addresses. They are reassigned\n                             Chennai                     small-business             between customers over time, so one\n                                                         broadband                  address may belong to different people on\n                                                                                    different days. Includes a reseller allocation\n                                                                                    at 198.18.7.0/24\n\n  192.0.2.0/24               MobileOne Telecom           Mobile network             Shared addresses across many phones\n\n  10.20.4.0/24 and           Not applicable              Private ranges             Not routable on the internet. Not registered to\n  172.16.0.0/16                                                                     anyone\n Registration records tell you who runs an address range. They do not tell you who was using an address at a given moment.\n\n\n\n\nSYNTHETIC DOCUMENT - CRIMEATHON'26 simulation. All organisations and people are fictional.                                      Page 3"
+        }
+      ]
+    ]
+  }
+}

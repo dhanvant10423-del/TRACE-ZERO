@@ -1,0 +1,3176 @@
+{
+  "case": "CR-26-047",
+  "sources": {
+    "E01": {
+      "filename": "E01_ledgerone_api_access.csv",
+      "sha256": "6ea011a2071a73a466a000f875a2597ad2291e31be2ec647df3d031517b2498e",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 36183
+      },
+      "schema": [
+        "ts_utc",
+        "request_id",
+        "api_key_id",
+        "caller_ip",
+        "user_agent",
+        "endpoint",
+        "method",
+        "records_returned",
+        "status"
+      ]
+    },
+    "E02": {
+      "filename": "E02_helpdeskr_audit_log.csv",
+      "sha256": "462713213ee44b1de3c9192c75860932567fbb22b3e0aa1cde014841597e84e2",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 25390
+      },
+      "schema": [
+        "ts_local",
+        "event_id",
+        "actor",
+        "actor_type",
+        "action",
+        "object_id",
+        "source_ip",
+        "result",
+        "details"
+      ]
+    },
+    "E03": {
+      "filename": "E03_sso_signin_log.csv",
+      "sha256": "e02d293d5ef58eeadfeb3b30f344d67f33887c0748854eec2b91ac0874802fbb",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "PARTIAL": 5971,
+        "VALID": 20922
+      },
+      "schema": [
+        "ts_utc",
+        "event_id",
+        "user",
+        "source_ip",
+        "city",
+        "auth_method",
+        "mfa_result",
+        "device_id",
+        "result",
+        "failure_reason"
+      ]
+    },
+    "E04": {
+      "filename": "E04_connected_software_register.json",
+      "sha256": "12e4d62781391f26db8d0412a49981dae225c9aa56d66031c1c41d8976cb5726",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 8
+      },
+      "schema": [
+        "integration",
+        "credential_id",
+        "system",
+        "vendor",
+        "scope",
+        "owner",
+        "created",
+        "last_review",
+        "ip_restriction",
+        "token_lifetime_days",
+        "last_used",
+        "status"
+      ]
+    },
+    "E05": {
+      "filename": "E05_bluevault_access_log.csv",
+      "sha256": "22fa8ea87b587af1e27711ec10d577b04ffcac48c0eca4c4b410ac32df27fd9e",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 7235,
+        "PARTIAL": 679
+      },
+      "schema": [
+        "epoch_s",
+        "event_id",
+        "principal",
+        "source_ip",
+        "action",
+        "path",
+        "bytes",
+        "result"
+      ]
+    },
+    "E06": {
+      "filename": "E06_billing_alert_and_invoice.pdf",
+      "sha256": "8fca8fd861d532d5a357b78742582f88bda0a50127e32f277712556797258e26",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 2
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E07": {
+      "filename": "E07_onboarding_review_file.pdf",
+      "sha256": "228866c549c9855047d3996175a96cbd91724de8a1ce0788abb44b3de4d4ab3c",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E08": {
+      "filename": "E08_contract_excerpt.pdf",
+      "sha256": "602ca3544e4aa85c5a85f79a233b23a50fb08fcfafe7f4b45f6fdae862fecef4",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E09": {
+      "filename": "E09_risk_register_extract.xlsx",
+      "sha256": "2d96301ad5d7566d39e8d0c0bbdebfa7fee4cf07a8eece6ea322498a303710fc",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 18
+      },
+      "schema": [
+        "Risk ID",
+        "Risk title",
+        "Category",
+        "Owner",
+        "Likelihood (1-5)",
+        "Impact (1-5)",
+        "Score",
+        "Rating",
+        "Treatment",
+        "Status",
+        "Approved by",
+        "Last reviewed",
+        "Next review due",
+        "Notes"
+      ]
+    },
+    "E10": {
+      "filename": "E10_it_security_policy_v2_1.pdf",
+      "sha256": "5da640d877ecfe5c9dadf6890ea0eb80e77a1740b1fc91fd9308144f125a8265",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E11": {
+      "filename": "E11_internal_audit_report_IA_2025_09.pdf",
+      "sha256": "2841474e6765a0cfe6050d57ac7b9fdbe3178b97175f83ef01744f64c548305f",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E12": {
+      "filename": "E12_email_notice.pdf",
+      "sha256": "10b4759454fc3513faa9cf3814276af5367389f1a27138a1c7d23b9a90be5e53",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E13": {
+      "filename": "E13_support_team_chat_export.json",
+      "sha256": "c72384c51b155f2624ae0c5c47bdbbb7369e2af29677ca558108b3a6e0a33507",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 16
+      },
+      "schema": [
+        "ts_local",
+        "channel",
+        "author",
+        "text"
+      ]
+    },
+    "E14": {
+      "filename": "E14_staff_roster.csv",
+      "sha256": "3c94b5141079efae39d8521265a7d291ec20d6e490cd51178f42b7839d0d4afa",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 412,
+        "AMBIGUOUS": 8
+      },
+      "schema": [
+        "employee_id",
+        "username",
+        "full_name",
+        "department",
+        "role",
+        "status",
+        "manager",
+        "hire_date",
+        "termination_date",
+        "notes"
+      ]
+    },
+    "E15": {
+      "filename": "E15_network_link_flow_log.csv",
+      "sha256": "c0f38cbc2b5b30f3ac62cee3ed353ca13962b5d08c71250e437e5ece97235a8e",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 9790
+      },
+      "schema": [
+        "ts_utc",
+        "flow_id",
+        "src_ip",
+        "src_label",
+        "dst_system",
+        "dst_port",
+        "bytes_out",
+        "bytes_in",
+        "tunnel_id",
+        "result"
+      ]
+    },
+    "E16": {
+      "filename": "E16_followup_email_notice.pdf",
+      "sha256": "4912f461a3dd29e5601f8a1edfdf9651b1e76debf901402ad955faa6ea731b4c",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 1
+      },
+      "schema": [
+        "text"
+      ]
+    },
+    "E17": {
+      "filename": "E17_indicator_list.csv",
+      "sha256": "c80a6a7d991934fe1ce679f4979dd7d8d32eba76508a6067494c6427e6f38692",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 5
+      },
+      "schema": [
+        "indicator",
+        "type",
+        "first_seen",
+        "last_seen",
+        "confidence",
+        "vendor_note"
+      ]
+    },
+    "E18": {
+      "filename": "E18_ledgerone_api_access_1_to_7_sep.csv",
+      "sha256": "1e4790d060acdd72c44da34e9848844675b04032342500e4be72a3522c9bc047",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 2891
+      },
+      "schema": [
+        "ts_utc",
+        "request_id",
+        "api_key_id",
+        "caller_ip",
+        "user_agent",
+        "endpoint",
+        "method",
+        "records_returned",
+        "status"
+      ]
+    },
+    "E19": {
+      "filename": "E19_vendor_master_change_log.csv",
+      "sha256": "f86bb5617a22b722bdfbd250a7b465876bd9e95847989ff36777f2bdaffe46f2",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 367
+      },
+      "schema": [
+        "ts_utc",
+        "change_id",
+        "vendor_id",
+        "vendor_name",
+        "field",
+        "old_value",
+        "new_value",
+        "changed_by",
+        "channel",
+        "approval_ref",
+        "source_ip",
+        "request_id"
+      ]
+    },
+    "E20": {
+      "filename": "E20_public_records_pack.pdf",
+      "sha256": "418dcdda9b4a1ed8322488d3f854198c946b6e27ead841d49f2ab5b4bc89b161",
+      "state": "available",
+      "reason": "",
+      "counts": {
+        "VALID": 3
+      },
+      "schema": [
+        "text"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "R06@E19/275",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0296 matches req-d988287087 across both logs.",
+      "refs": [
+        "E18/23",
+        "E19/275"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:30:57Z",
+      "entity": "LedgerOne vendor / V-0296"
+    },
+    {
+      "id": "R04@E19/275",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0296 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/275",
+        "E18/23",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:30:57Z",
+      "entity": "LedgerOne vendor / V-0296"
+    },
+    {
+      "id": "R06@E19/276",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0294 matches req-6350a807f9 across both logs.",
+      "refs": [
+        "E18/25",
+        "E19/276"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:27Z",
+      "entity": "LedgerOne vendor / V-0294"
+    },
+    {
+      "id": "R04@E19/276",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0294 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/276",
+        "E18/25",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:27Z",
+      "entity": "LedgerOne vendor / V-0294"
+    },
+    {
+      "id": "R06@E19/277",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0320 matches req-fab162b261 across both logs.",
+      "refs": [
+        "E18/26",
+        "E19/277"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:29Z",
+      "entity": "LedgerOne vendor / V-0320"
+    },
+    {
+      "id": "R04@E19/277",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0320 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/277",
+        "E18/26",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:29Z",
+      "entity": "LedgerOne vendor / V-0320"
+    },
+    {
+      "id": "R06@E19/278",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0171 matches req-2d2c7d742b across both logs.",
+      "refs": [
+        "E18/27",
+        "E19/278"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:29Z",
+      "entity": "LedgerOne vendor / V-0171"
+    },
+    {
+      "id": "R04@E19/278",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0171 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/278",
+        "E18/27",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:29Z",
+      "entity": "LedgerOne vendor / V-0171"
+    },
+    {
+      "id": "R06@E19/279",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0149 matches req-4bd23aaf25 across both logs.",
+      "refs": [
+        "E18/29",
+        "E19/279"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:41Z",
+      "entity": "LedgerOne vendor / V-0149"
+    },
+    {
+      "id": "R04@E19/279",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0149 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/279",
+        "E18/29",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:31:41Z",
+      "entity": "LedgerOne vendor / V-0149"
+    },
+    {
+      "id": "R06@E19/280",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0229 matches req-5b24baaaa2 across both logs.",
+      "refs": [
+        "E18/36",
+        "E19/280"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:36:35Z",
+      "entity": "LedgerOne vendor / V-0229"
+    },
+    {
+      "id": "R04@E19/280",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0229 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/280",
+        "E18/36",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:36:35Z",
+      "entity": "LedgerOne vendor / V-0229"
+    },
+    {
+      "id": "R06@E19/281",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0283 matches req-fce5b7f4b0 across both logs.",
+      "refs": [
+        "E18/41",
+        "E19/281"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:39:22Z",
+      "entity": "LedgerOne vendor / V-0283"
+    },
+    {
+      "id": "R04@E19/281",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0283 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/281",
+        "E18/41",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:39:22Z",
+      "entity": "LedgerOne vendor / V-0283"
+    },
+    {
+      "id": "R06@E19/282",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0347 matches req-7f4f24a906 across both logs.",
+      "refs": [
+        "E18/43",
+        "E19/282"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:40:57Z",
+      "entity": "LedgerOne vendor / V-0347"
+    },
+    {
+      "id": "R04@E19/282",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0347 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/282",
+        "E18/43",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:40:57Z",
+      "entity": "LedgerOne vendor / V-0347"
+    },
+    {
+      "id": "R06@E19/283",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0154 matches req-83e3cee6b0 across both logs.",
+      "refs": [
+        "E18/50",
+        "E19/283"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:43:51Z",
+      "entity": "LedgerOne vendor / V-0154"
+    },
+    {
+      "id": "R04@E19/283",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0154 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/283",
+        "E18/50",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:43:51Z",
+      "entity": "LedgerOne vendor / V-0154"
+    },
+    {
+      "id": "R06@E19/284",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0395 matches req-3b35ffd1c6 across both logs.",
+      "refs": [
+        "E18/51",
+        "E19/284"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:44:28Z",
+      "entity": "LedgerOne vendor / V-0395"
+    },
+    {
+      "id": "R04@E19/284",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0395 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/284",
+        "E18/51",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-01T01:44:28Z",
+      "entity": "LedgerOne vendor / V-0395"
+    },
+    {
+      "id": "R06@E19/290",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0248 matches req-2ab9aa4c0d across both logs.",
+      "refs": [
+        "E18/540",
+        "E19/290"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:30:24Z",
+      "entity": "LedgerOne vendor / V-0248"
+    },
+    {
+      "id": "R04@E19/290",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0248 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/290",
+        "E18/540",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:30:24Z",
+      "entity": "LedgerOne vendor / V-0248"
+    },
+    {
+      "id": "R06@E19/291",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0327 matches req-4fdaa1040c across both logs.",
+      "refs": [
+        "E18/541",
+        "E19/291"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:31:00Z",
+      "entity": "LedgerOne vendor / V-0327"
+    },
+    {
+      "id": "R04@E19/291",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0327 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/291",
+        "E18/541",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:31:00Z",
+      "entity": "LedgerOne vendor / V-0327"
+    },
+    {
+      "id": "R06@E19/292",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0303 matches req-7b4a539665 across both logs.",
+      "refs": [
+        "E18/544",
+        "E19/292"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:31:58Z",
+      "entity": "LedgerOne vendor / V-0303"
+    },
+    {
+      "id": "R04@E19/292",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0303 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/292",
+        "E18/544",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:31:58Z",
+      "entity": "LedgerOne vendor / V-0303"
+    },
+    {
+      "id": "R06@E19/293",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0196 matches req-104d0cbcd4 across both logs.",
+      "refs": [
+        "E18/546",
+        "E19/293"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:32:50Z",
+      "entity": "LedgerOne vendor / V-0196"
+    },
+    {
+      "id": "R04@E19/293",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0196 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/293",
+        "E18/546",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:32:50Z",
+      "entity": "LedgerOne vendor / V-0196"
+    },
+    {
+      "id": "R06@E19/294",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0337 matches req-87bc76285f across both logs.",
+      "refs": [
+        "E18/549",
+        "E19/294"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:35:41Z",
+      "entity": "LedgerOne vendor / V-0337"
+    },
+    {
+      "id": "R04@E19/294",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0337 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/294",
+        "E18/549",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:35:41Z",
+      "entity": "LedgerOne vendor / V-0337"
+    },
+    {
+      "id": "R06@E19/295",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0247 matches req-6922a32eb6 across both logs.",
+      "refs": [
+        "E18/552",
+        "E19/295"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:37:37Z",
+      "entity": "LedgerOne vendor / V-0247"
+    },
+    {
+      "id": "R04@E19/295",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0247 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/295",
+        "E18/552",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:37:37Z",
+      "entity": "LedgerOne vendor / V-0247"
+    },
+    {
+      "id": "R06@E19/296",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0359 matches req-eca53d8f4b across both logs.",
+      "refs": [
+        "E18/558",
+        "E19/296"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:42:15Z",
+      "entity": "LedgerOne vendor / V-0359"
+    },
+    {
+      "id": "R04@E19/296",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0359 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/296",
+        "E18/558",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:42:15Z",
+      "entity": "LedgerOne vendor / V-0359"
+    },
+    {
+      "id": "R06@E19/297",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0107 matches req-1bd9e22f64 across both logs.",
+      "refs": [
+        "E18/564",
+        "E19/297"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:43:34Z",
+      "entity": "LedgerOne vendor / V-0107"
+    },
+    {
+      "id": "R04@E19/297",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0107 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/297",
+        "E18/564",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:43:34Z",
+      "entity": "LedgerOne vendor / V-0107"
+    },
+    {
+      "id": "R06@E19/298",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0398 matches req-fb86abb8fe across both logs.",
+      "refs": [
+        "E18/568",
+        "E19/298"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:44:45Z",
+      "entity": "LedgerOne vendor / V-0398"
+    },
+    {
+      "id": "R04@E19/298",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0398 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/298",
+        "E18/568",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:44:45Z",
+      "entity": "LedgerOne vendor / V-0398"
+    },
+    {
+      "id": "R06@E19/299",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0271 matches req-19361cbfb3 across both logs.",
+      "refs": [
+        "E18/569",
+        "E19/299"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:45:00Z",
+      "entity": "LedgerOne vendor / V-0271"
+    },
+    {
+      "id": "R04@E19/299",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0271 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/299",
+        "E18/569",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-02T01:45:00Z",
+      "entity": "LedgerOne vendor / V-0271"
+    },
+    {
+      "id": "R06@E19/305",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0389 matches req-8a823d5054 across both logs.",
+      "refs": [
+        "E18/1059",
+        "E19/305"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:31:02Z",
+      "entity": "LedgerOne vendor / V-0389"
+    },
+    {
+      "id": "R04@E19/305",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0389 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/305",
+        "E18/1059",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:31:02Z",
+      "entity": "LedgerOne vendor / V-0389"
+    },
+    {
+      "id": "R06@E19/306",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0285 matches req-a60866518f across both logs.",
+      "refs": [
+        "E18/1067",
+        "E19/306"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:35:40Z",
+      "entity": "LedgerOne vendor / V-0285"
+    },
+    {
+      "id": "R04@E19/306",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0285 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/306",
+        "E18/1067",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:35:40Z",
+      "entity": "LedgerOne vendor / V-0285"
+    },
+    {
+      "id": "R06@E19/307",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0213 matches req-b320fffc67 across both logs.",
+      "refs": [
+        "E18/1072",
+        "E19/307"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:37:46Z",
+      "entity": "LedgerOne vendor / V-0213"
+    },
+    {
+      "id": "R04@E19/307",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0213 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/307",
+        "E18/1072",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:37:46Z",
+      "entity": "LedgerOne vendor / V-0213"
+    },
+    {
+      "id": "R06@E19/308",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0169 matches req-77a6e21f9 across both logs.",
+      "refs": [
+        "E18/1078",
+        "E19/308"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:40:47Z",
+      "entity": "LedgerOne vendor / V-0169"
+    },
+    {
+      "id": "R04@E19/308",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0169 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/308",
+        "E18/1078",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:40:47Z",
+      "entity": "LedgerOne vendor / V-0169"
+    },
+    {
+      "id": "R06@E19/309",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0265 matches req-95b3ded46 across both logs.",
+      "refs": [
+        "E18/1080",
+        "E19/309"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:41:20Z",
+      "entity": "LedgerOne vendor / V-0265"
+    },
+    {
+      "id": "R04@E19/309",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0265 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/309",
+        "E18/1080",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:41:20Z",
+      "entity": "LedgerOne vendor / V-0265"
+    },
+    {
+      "id": "R06@E19/310",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0395 matches req-842f25d5bb across both logs.",
+      "refs": [
+        "E18/1085",
+        "E19/310"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:42:54Z",
+      "entity": "LedgerOne vendor / V-0395"
+    },
+    {
+      "id": "R04@E19/310",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0395 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/310",
+        "E18/1085",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:42:54Z",
+      "entity": "LedgerOne vendor / V-0395"
+    },
+    {
+      "id": "R06@E19/311",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0255 matches req-5edb43a452 across both logs.",
+      "refs": [
+        "E18/1086",
+        "E19/311"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:43:19Z",
+      "entity": "LedgerOne vendor / V-0255"
+    },
+    {
+      "id": "R04@E19/311",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0255 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/311",
+        "E18/1086",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:43:19Z",
+      "entity": "LedgerOne vendor / V-0255"
+    },
+    {
+      "id": "R06@E19/312",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0312 matches req-abc9be6360 across both logs.",
+      "refs": [
+        "E18/1087",
+        "E19/312"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:17Z",
+      "entity": "LedgerOne vendor / V-0312"
+    },
+    {
+      "id": "R04@E19/312",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0312 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/312",
+        "E18/1087",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:17Z",
+      "entity": "LedgerOne vendor / V-0312"
+    },
+    {
+      "id": "R06@E19/313",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "bank_account for V-0412 matches req-5f61b0de8 across both logs.",
+      "refs": [
+        "E18/1088",
+        "E19/313"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:30Z",
+      "entity": "LedgerOne vendor / V-0412"
+    },
+    {
+      "id": "R01@E19/313",
+      "rule": "R01",
+      "title": "Bank change used a registered credential",
+      "summary": "The request key matches the LedgerOne credential in the September register snapshot.",
+      "refs": [
+        "E18/1088",
+        "E19/313",
+        "E04/integrations[0]"
+      ],
+      "effects": {
+        "H1": "relevant",
+        "H2": "relevant"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:30Z",
+      "entity": "LedgerOne vendor / V-0412"
+    },
+    {
+      "id": "R02@E19/313",
+      "rule": "R02",
+      "title": "Bank details changed outside the announced contact sync",
+      "summary": "Coastal Packaging Ltd (V-0412) changed from ****4417 to ****9083. The approval field is blank. A separate finance authorization could change the interpretation.",
+      "refs": [
+        "E19/313",
+        "E18/1088",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H1": "supports",
+        "H2": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:30Z",
+      "entity": "LedgerOne vendor / V-0412"
+    },
+    {
+      "id": "R06@E19/314",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0390 matches req-b6fefa3502 across both logs.",
+      "refs": [
+        "E18/1089",
+        "E19/314"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:40Z",
+      "entity": "LedgerOne vendor / V-0390"
+    },
+    {
+      "id": "R04@E19/314",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0390 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/314",
+        "E18/1089",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:40Z",
+      "entity": "LedgerOne vendor / V-0390"
+    },
+    {
+      "id": "R06@E19/315",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0166 matches req-26ef6d4c05 across both logs.",
+      "refs": [
+        "E18/1090",
+        "E19/315"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:45Z",
+      "entity": "LedgerOne vendor / V-0166"
+    },
+    {
+      "id": "R04@E19/315",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0166 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/315",
+        "E18/1090",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-03T01:44:45Z",
+      "entity": "LedgerOne vendor / V-0166"
+    },
+    {
+      "id": "R06@E19/321",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0254 matches req-643d5d7651 across both logs.",
+      "refs": [
+        "E18/1580",
+        "E19/321"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:31:36Z",
+      "entity": "LedgerOne vendor / V-0254"
+    },
+    {
+      "id": "R04@E19/321",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0254 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/321",
+        "E18/1580",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:31:36Z",
+      "entity": "LedgerOne vendor / V-0254"
+    },
+    {
+      "id": "R06@E19/322",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0267 matches req-ac19529126 across both logs.",
+      "refs": [
+        "E18/1588",
+        "E19/322"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:35:05Z",
+      "entity": "LedgerOne vendor / V-0267"
+    },
+    {
+      "id": "R04@E19/322",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0267 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/322",
+        "E18/1588",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:35:05Z",
+      "entity": "LedgerOne vendor / V-0267"
+    },
+    {
+      "id": "R06@E19/323",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0280 matches req-c9938e9114 across both logs.",
+      "refs": [
+        "E18/1589",
+        "E19/323"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:35:20Z",
+      "entity": "LedgerOne vendor / V-0280"
+    },
+    {
+      "id": "R04@E19/323",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0280 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/323",
+        "E18/1589",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:35:20Z",
+      "entity": "LedgerOne vendor / V-0280"
+    },
+    {
+      "id": "R06@E19/324",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0130 matches req-8a2f4fd512 across both logs.",
+      "refs": [
+        "E18/1591",
+        "E19/324"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:36:35Z",
+      "entity": "LedgerOne vendor / V-0130"
+    },
+    {
+      "id": "R04@E19/324",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0130 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/324",
+        "E18/1591",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:36:35Z",
+      "entity": "LedgerOne vendor / V-0130"
+    },
+    {
+      "id": "R06@E19/325",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0258 matches req-b8e42e6498 across both logs.",
+      "refs": [
+        "E18/1594",
+        "E19/325"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:37:43Z",
+      "entity": "LedgerOne vendor / V-0258"
+    },
+    {
+      "id": "R04@E19/325",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0258 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/325",
+        "E18/1594",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:37:43Z",
+      "entity": "LedgerOne vendor / V-0258"
+    },
+    {
+      "id": "R06@E19/326",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0277 matches req-2d356f3408 across both logs.",
+      "refs": [
+        "E18/1597",
+        "E19/326"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:38:56Z",
+      "entity": "LedgerOne vendor / V-0277"
+    },
+    {
+      "id": "R04@E19/326",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0277 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/326",
+        "E18/1597",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:38:56Z",
+      "entity": "LedgerOne vendor / V-0277"
+    },
+    {
+      "id": "R06@E19/327",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0371 matches req-7621374e40 across both logs.",
+      "refs": [
+        "E18/1600",
+        "E19/327"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:40:03Z",
+      "entity": "LedgerOne vendor / V-0371"
+    },
+    {
+      "id": "R04@E19/327",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0371 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/327",
+        "E18/1600",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:40:03Z",
+      "entity": "LedgerOne vendor / V-0371"
+    },
+    {
+      "id": "R06@E19/328",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0103 matches req-b4cbcc0904 across both logs.",
+      "refs": [
+        "E18/1601",
+        "E19/328"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:41:36Z",
+      "entity": "LedgerOne vendor / V-0103"
+    },
+    {
+      "id": "R04@E19/328",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0103 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/328",
+        "E18/1601",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:41:36Z",
+      "entity": "LedgerOne vendor / V-0103"
+    },
+    {
+      "id": "R06@E19/329",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0382 matches req-217de0e5b3 across both logs.",
+      "refs": [
+        "E18/1602",
+        "E19/329"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:41:44Z",
+      "entity": "LedgerOne vendor / V-0382"
+    },
+    {
+      "id": "R04@E19/329",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0382 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/329",
+        "E18/1602",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:41:44Z",
+      "entity": "LedgerOne vendor / V-0382"
+    },
+    {
+      "id": "R06@E19/330",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0316 matches req-53ce62c0d6 across both logs.",
+      "refs": [
+        "E18/1608",
+        "E19/330"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:44:41Z",
+      "entity": "LedgerOne vendor / V-0316"
+    },
+    {
+      "id": "R04@E19/330",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0316 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/330",
+        "E18/1608",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-04T01:44:41Z",
+      "entity": "LedgerOne vendor / V-0316"
+    },
+    {
+      "id": "R06@E19/335",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0195 matches req-18d520f18a across both logs.",
+      "refs": [
+        "E18/2098",
+        "E19/335"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:30:42Z",
+      "entity": "LedgerOne vendor / V-0195"
+    },
+    {
+      "id": "R04@E19/335",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0195 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/335",
+        "E18/2098",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:30:42Z",
+      "entity": "LedgerOne vendor / V-0195"
+    },
+    {
+      "id": "R06@E19/336",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0206 matches req-eec9e7da88 across both logs.",
+      "refs": [
+        "E18/2099",
+        "E19/336"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:30:48Z",
+      "entity": "LedgerOne vendor / V-0206"
+    },
+    {
+      "id": "R04@E19/336",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0206 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/336",
+        "E18/2099",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:30:48Z",
+      "entity": "LedgerOne vendor / V-0206"
+    },
+    {
+      "id": "R06@E19/337",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0250 matches req-ae3255455f across both logs.",
+      "refs": [
+        "E18/2102",
+        "E19/337"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:33:39Z",
+      "entity": "LedgerOne vendor / V-0250"
+    },
+    {
+      "id": "R04@E19/337",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0250 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/337",
+        "E18/2102",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:33:39Z",
+      "entity": "LedgerOne vendor / V-0250"
+    },
+    {
+      "id": "R06@E19/338",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0389 matches req-70585d6aa6 across both logs.",
+      "refs": [
+        "E18/2110",
+        "E19/338"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:36:09Z",
+      "entity": "LedgerOne vendor / V-0389"
+    },
+    {
+      "id": "R04@E19/338",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0389 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/338",
+        "E18/2110",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:36:09Z",
+      "entity": "LedgerOne vendor / V-0389"
+    },
+    {
+      "id": "R06@E19/339",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0327 matches req-bb8056bb21 across both logs.",
+      "refs": [
+        "E18/2116",
+        "E19/339"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:39:45Z",
+      "entity": "LedgerOne vendor / V-0327"
+    },
+    {
+      "id": "R04@E19/339",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0327 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/339",
+        "E18/2116",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:39:45Z",
+      "entity": "LedgerOne vendor / V-0327"
+    },
+    {
+      "id": "R06@E19/340",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0193 matches req-101ff77d43 across both logs.",
+      "refs": [
+        "E18/2117",
+        "E19/340"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:40:04Z",
+      "entity": "LedgerOne vendor / V-0193"
+    },
+    {
+      "id": "R04@E19/340",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0193 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/340",
+        "E18/2117",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:40:04Z",
+      "entity": "LedgerOne vendor / V-0193"
+    },
+    {
+      "id": "R06@E19/341",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0348 matches req-e34773f14c across both logs.",
+      "refs": [
+        "E18/2118",
+        "E19/341"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:40:44Z",
+      "entity": "LedgerOne vendor / V-0348"
+    },
+    {
+      "id": "R04@E19/341",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0348 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/341",
+        "E18/2118",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:40:44Z",
+      "entity": "LedgerOne vendor / V-0348"
+    },
+    {
+      "id": "R06@E19/342",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0162 matches req-9ccea891ed across both logs.",
+      "refs": [
+        "E18/2122",
+        "E19/342"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:43:00Z",
+      "entity": "LedgerOne vendor / V-0162"
+    },
+    {
+      "id": "R04@E19/342",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0162 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/342",
+        "E18/2122",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:43:00Z",
+      "entity": "LedgerOne vendor / V-0162"
+    },
+    {
+      "id": "R06@E19/343",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0147 matches req-444e796a00 across both logs.",
+      "refs": [
+        "E18/2124",
+        "E19/343"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:44:11Z",
+      "entity": "LedgerOne vendor / V-0147"
+    },
+    {
+      "id": "R04@E19/343",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0147 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/343",
+        "E18/2124",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:44:11Z",
+      "entity": "LedgerOne vendor / V-0147"
+    },
+    {
+      "id": "R06@E19/344",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0302 matches req-28d3a3ef37 across both logs.",
+      "refs": [
+        "E18/2125",
+        "E19/344"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:44:17Z",
+      "entity": "LedgerOne vendor / V-0302"
+    },
+    {
+      "id": "R04@E19/344",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0302 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/344",
+        "E18/2125",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-05T01:44:17Z",
+      "entity": "LedgerOne vendor / V-0302"
+    },
+    {
+      "id": "R06@E19/345",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0360 matches req-d6c346e70f across both logs.",
+      "refs": [
+        "E18/2249",
+        "E19/345"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:30:41Z",
+      "entity": "LedgerOne vendor / V-0360"
+    },
+    {
+      "id": "R04@E19/345",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0360 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/345",
+        "E18/2249",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:30:41Z",
+      "entity": "LedgerOne vendor / V-0360"
+    },
+    {
+      "id": "R06@E19/346",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0396 matches req-8296cf483e across both logs.",
+      "refs": [
+        "E18/2251",
+        "E19/346"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:06Z",
+      "entity": "LedgerOne vendor / V-0396"
+    },
+    {
+      "id": "R04@E19/346",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0396 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/346",
+        "E18/2251",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:06Z",
+      "entity": "LedgerOne vendor / V-0396"
+    },
+    {
+      "id": "R06@E19/347",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0141 matches req-b021be07cf across both logs.",
+      "refs": [
+        "E18/2252",
+        "E19/347"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:27Z",
+      "entity": "LedgerOne vendor / V-0141"
+    },
+    {
+      "id": "R04@E19/347",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0141 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/347",
+        "E18/2252",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:27Z",
+      "entity": "LedgerOne vendor / V-0141"
+    },
+    {
+      "id": "R06@E19/348",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0110 matches req-267d35fd62 across both logs.",
+      "refs": [
+        "E18/2253",
+        "E19/348"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:38Z",
+      "entity": "LedgerOne vendor / V-0110"
+    },
+    {
+      "id": "R04@E19/348",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0110 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/348",
+        "E18/2253",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:32:38Z",
+      "entity": "LedgerOne vendor / V-0110"
+    },
+    {
+      "id": "R06@E19/349",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0227 matches req-f8c928c6fc across both logs.",
+      "refs": [
+        "E18/2255",
+        "E19/349"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:33:09Z",
+      "entity": "LedgerOne vendor / V-0227"
+    },
+    {
+      "id": "R04@E19/349",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0227 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/349",
+        "E18/2255",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:33:09Z",
+      "entity": "LedgerOne vendor / V-0227"
+    },
+    {
+      "id": "R06@E19/350",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0256 matches req-7a0d46e03c across both logs.",
+      "refs": [
+        "E18/2257",
+        "E19/350"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:33:51Z",
+      "entity": "LedgerOne vendor / V-0256"
+    },
+    {
+      "id": "R04@E19/350",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0256 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/350",
+        "E18/2257",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:33:51Z",
+      "entity": "LedgerOne vendor / V-0256"
+    },
+    {
+      "id": "R06@E19/351",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0209 matches req-a0c7db443d across both logs.",
+      "refs": [
+        "E18/2259",
+        "E19/351"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:34:04Z",
+      "entity": "LedgerOne vendor / V-0209"
+    },
+    {
+      "id": "R04@E19/351",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0209 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/351",
+        "E18/2259",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:34:04Z",
+      "entity": "LedgerOne vendor / V-0209"
+    },
+    {
+      "id": "R06@E19/352",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0341 matches req-ea06a25cf2 across both logs.",
+      "refs": [
+        "E18/2264",
+        "E19/352"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:36:34Z",
+      "entity": "LedgerOne vendor / V-0341"
+    },
+    {
+      "id": "R04@E19/352",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0341 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/352",
+        "E18/2264",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:36:34Z",
+      "entity": "LedgerOne vendor / V-0341"
+    },
+    {
+      "id": "R06@E19/353",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0117 matches req-d1d016ef94 across both logs.",
+      "refs": [
+        "E18/2265",
+        "E19/353"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:37:43Z",
+      "entity": "LedgerOne vendor / V-0117"
+    },
+    {
+      "id": "R04@E19/353",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0117 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/353",
+        "E18/2265",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:37:43Z",
+      "entity": "LedgerOne vendor / V-0117"
+    },
+    {
+      "id": "R06@E19/354",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0213 matches req-3d12d6440f across both logs.",
+      "refs": [
+        "E18/2275",
+        "E19/354"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:44:38Z",
+      "entity": "LedgerOne vendor / V-0213"
+    },
+    {
+      "id": "R04@E19/354",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0213 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/354",
+        "E18/2275",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-06T01:44:38Z",
+      "entity": "LedgerOne vendor / V-0213"
+    },
+    {
+      "id": "R06@E19/355",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0112 matches req-25af1ae6c4 across both logs.",
+      "refs": [
+        "E18/2398",
+        "E19/355"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:32:32Z",
+      "entity": "LedgerOne vendor / V-0112"
+    },
+    {
+      "id": "R04@E19/355",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0112 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/355",
+        "E18/2398",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:32:32Z",
+      "entity": "LedgerOne vendor / V-0112"
+    },
+    {
+      "id": "R06@E19/356",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0120 matches req-e197a3bb7a across both logs.",
+      "refs": [
+        "E18/2401",
+        "E19/356"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:33:32Z",
+      "entity": "LedgerOne vendor / V-0120"
+    },
+    {
+      "id": "R04@E19/356",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0120 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/356",
+        "E18/2401",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:33:32Z",
+      "entity": "LedgerOne vendor / V-0120"
+    },
+    {
+      "id": "R06@E19/357",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0118 matches req-8f5f68b2e1 across both logs.",
+      "refs": [
+        "E18/2405",
+        "E19/357"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:37:09Z",
+      "entity": "LedgerOne vendor / V-0118"
+    },
+    {
+      "id": "R04@E19/357",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0118 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/357",
+        "E18/2405",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:37:09Z",
+      "entity": "LedgerOne vendor / V-0118"
+    },
+    {
+      "id": "R06@E19/358",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0381 matches req-cdca15c672 across both logs.",
+      "refs": [
+        "E18/2411",
+        "E19/358"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:38:37Z",
+      "entity": "LedgerOne vendor / V-0381"
+    },
+    {
+      "id": "R04@E19/358",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0381 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/358",
+        "E18/2411",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:38:37Z",
+      "entity": "LedgerOne vendor / V-0381"
+    },
+    {
+      "id": "R06@E19/359",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0366 matches req-5b68622034 across both logs.",
+      "refs": [
+        "E18/2413",
+        "E19/359"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:09Z",
+      "entity": "LedgerOne vendor / V-0366"
+    },
+    {
+      "id": "R04@E19/359",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0366 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/359",
+        "E18/2413",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:09Z",
+      "entity": "LedgerOne vendor / V-0366"
+    },
+    {
+      "id": "R06@E19/360",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0288 matches req-34997dff76 across both logs.",
+      "refs": [
+        "E18/2414",
+        "E19/360"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:31Z",
+      "entity": "LedgerOne vendor / V-0288"
+    },
+    {
+      "id": "R04@E19/360",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0288 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/360",
+        "E18/2414",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:31Z",
+      "entity": "LedgerOne vendor / V-0288"
+    },
+    {
+      "id": "R06@E19/361",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0322 matches req-18b45ad9de across both logs.",
+      "refs": [
+        "E18/2415",
+        "E19/361"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:36Z",
+      "entity": "LedgerOne vendor / V-0322"
+    },
+    {
+      "id": "R04@E19/361",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0322 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/361",
+        "E18/2415",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:36Z",
+      "entity": "LedgerOne vendor / V-0322"
+    },
+    {
+      "id": "R06@E19/362",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_email for V-0350 matches req-ab5d9c4990 across both logs.",
+      "refs": [
+        "E18/2416",
+        "E19/362"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:43Z",
+      "entity": "LedgerOne vendor / V-0350"
+    },
+    {
+      "id": "R04@E19/362",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0350 received a contact_email update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/362",
+        "E18/2416",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:39:43Z",
+      "entity": "LedgerOne vendor / V-0350"
+    },
+    {
+      "id": "R06@E19/363",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0290 matches req-ec18b54c50 across both logs.",
+      "refs": [
+        "E18/2422",
+        "E19/363"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:42:52Z",
+      "entity": "LedgerOne vendor / V-0290"
+    },
+    {
+      "id": "R04@E19/363",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0290 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/363",
+        "E18/2422",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:42:52Z",
+      "entity": "LedgerOne vendor / V-0290"
+    },
+    {
+      "id": "R06@E19/364",
+      "rule": "R06",
+      "title": "Vendor change linked to API request",
+      "summary": "contact_phone for V-0160 matches req-4eedaf1512 across both logs.",
+      "refs": [
+        "E18/2424",
+        "E19/364"
+      ],
+      "effects": {
+        "H3": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:44:41Z",
+      "entity": "LedgerOne vendor / V-0160"
+    },
+    {
+      "id": "R04@E19/364",
+      "rule": "R04",
+      "title": "Contact update fits the announced sync",
+      "summary": "V-0160 received a contact_phone update under the registered integration. This explains this operation only.",
+      "refs": [
+        "E19/364",
+        "E18/2424",
+        "E04/integrations[0]",
+        "E16/p1"
+      ],
+      "effects": {
+        "H2": "supports",
+        "H1": "contradicts"
+      },
+      "kind": "inference",
+      "utc": "2026-09-07T01:44:41Z",
+      "entity": "LedgerOne vendor / V-0160"
+    },
+    {
+      "id": "R03@E04/integrations[0]",
+      "rule": "R03",
+      "title": "Registered scope exceeds the onboarding request",
+      "summary": "E07 lists invoices, vendors and payments. E04 grants read/write access to all modules. The register shows its September snapshot.",
+      "refs": [
+        "E04/integrations[0]",
+        "E07/p1"
+      ],
+      "effects": {
+        "H2": "supports"
+      },
+      "kind": "inference",
+      "utc": null,
+      "entity": "LedgerOne credential / key-tb-07"
+    },
+    {
+      "id": "R09@E02/19794",
+      "rule": "R09",
+      "title": "Integration downloaded a matched export job",
+      "summary": "EXP-5410 was created and downloaded under tb-sync-svc. The address and date match E17. Address reuse limits attribution.",
+      "refs": [
+        "E02/19793",
+        "E02/19794",
+        "E04/integrations[1]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T18:02:10Z",
+      "entity": "HelpDeskr job / EXP-5410"
+    },
+    {
+      "id": "R09@E02/19800",
+      "rule": "R09",
+      "title": "Integration downloaded a matched export job",
+      "summary": "EXP-5412 was created and downloaded under tb-sync-svc. The address and date match E17. Address reuse limits attribution.",
+      "refs": [
+        "E02/19799",
+        "E02/19800",
+        "E04/integrations[1]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T18:18:10Z",
+      "entity": "HelpDeskr job / EXP-5412"
+    },
+    {
+      "id": "R09@E02/19806",
+      "rule": "R09",
+      "title": "Integration downloaded a matched export job",
+      "summary": "EXP-5414 was created and downloaded under tb-sync-svc. The address and date match E17. Address reuse limits attribution.",
+      "refs": [
+        "E02/19805",
+        "E02/19806",
+        "E04/integrations[1]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T18:31:10Z",
+      "entity": "HelpDeskr job / EXP-5414"
+    },
+    {
+      "id": "R09@E02/19812",
+      "rule": "R09",
+      "title": "Integration downloaded a matched export job",
+      "summary": "EXP-5416 was created and downloaded under tb-sync-svc. The address and date match E17. Address reuse limits attribution.",
+      "refs": [
+        "E02/19811",
+        "E02/19812",
+        "E04/integrations[1]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T18:43:10Z",
+      "entity": "HelpDeskr job / EXP-5416"
+    },
+    {
+      "id": "R09@E02/19818",
+      "rule": "R09",
+      "title": "Integration downloaded a matched export job",
+      "summary": "EXP-5418 was created and downloaded under tb-sync-svc. The address and date match E17. Address reuse limits attribution.",
+      "refs": [
+        "E02/19817",
+        "E02/19818",
+        "E04/integrations[1]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T18:56:10Z",
+      "entity": "HelpDeskr job / EXP-5418"
+    },
+    {
+      "id": "R10@E02/19822",
+      "rule": "R10",
+      "title": "Export deletion timed out",
+      "summary": "EXP-5419 has an error on deletion. Later file retention is unknown.",
+      "refs": [
+        "E02/19822"
+      ],
+      "effects": {
+        "H1": "relevant"
+      },
+      "kind": "inference",
+      "utc": "2026-08-11T19:03:10Z",
+      "entity": "HelpDeskr job / EXP-5419"
+    },
+    {
+      "id": "R05@E02/19792",
+      "rule": "R05",
+      "title": "Possible route from a ticket to a storage key",
+      "summary": "Chat names both the ticket and key. A service read the ticket, and the key later read a finance file by the recorded clocks. Who obtained the key and how remains open.",
+      "refs": [
+        "E13/messages[1]",
+        "E02/19792",
+        "E04/integrations[7]",
+        "E05/6483"
+      ],
+      "effects": {
+        "H1": "gap",
+        "H3": "gap"
+      },
+      "kind": "candidate",
+      "utc": "2026-08-11T17:58:10Z",
+      "entity": "HelpDeskr ticket / TKT-48213"
+    },
+    {
+      "id": "R07@E01/19924",
+      "rule": "R07",
+      "title": "Documented audit offers a separate export context",
+      "summary": "The finance user's LedgerOne download matches their audit announcement. The HelpDeskr job identifies a different principal and system. Common control remains unknown.",
+      "refs": [
+        "E13/messages[7]",
+        "E01/19924",
+        "E02/19794"
+      ],
+      "effects": {
+        "H3": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-07-22T06:19:00Z",
+      "entity": "LedgerOne account / f.dsouza"
+    },
+    {
+      "id": "R11@E01/28250",
+      "rule": "R11",
+      "title": "Finance export downloaded from a listed address",
+      "summary": "LedgerOne reports 9,840 returned records. Unique records and final recipients are unknown.",
+      "refs": [
+        "E01/28250",
+        "E04/integrations[0]",
+        "E17/2"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-12T03:43:52Z",
+      "entity": "LedgerOne export / 9931"
+    },
+    {
+      "id": "R11@E01/28269",
+      "rule": "R11",
+      "title": "Finance export downloaded from a listed address",
+      "summary": "LedgerOne reports 9,835 returned records. Unique records and final recipients are unknown.",
+      "refs": [
+        "E01/28269",
+        "E04/integrations[0]",
+        "E17/3"
+      ],
+      "effects": {
+        "H1": "supports"
+      },
+      "kind": "inference",
+      "utc": "2026-08-12T03:58:07Z",
+      "entity": "LedgerOne export / 9932"
+    },
+    {
+      "id": "R12@E15/8173",
+      "rule": "R12",
+      "title": "Private-link flow overlaps API activity",
+      "summary": "Same recorded IP, destination system and UTC day. The flow lacks a shared request ID. The vendor supplies the host label.",
+      "refs": [
+        "E15/8173",
+        "E01/30454"
+      ],
+      "effects": {
+        "H3": "gap"
+      },
+      "kind": "candidate",
+      "utc": "2026-08-17T12:10:00Z",
+      "entity": "10.20.4.77"
+    },
+    {
+      "id": "R12@E15/8299",
+      "rule": "R12",
+      "title": "Private-link flow overlaps API activity",
+      "summary": "Same recorded IP, destination system and UTC day. The flow lacks a shared request ID. The vendor supplies the host label.",
+      "refs": [
+        "E15/8299",
+        "E01/30975"
+      ],
+      "effects": {
+        "H3": "gap"
+      },
+      "kind": "candidate",
+      "utc": "2026-08-18T12:10:00Z",
+      "entity": "10.20.4.77"
+    },
+    {
+      "id": "R12@E15/8431",
+      "rule": "R12",
+      "title": "Private-link flow overlaps API activity",
+      "summary": "Same recorded IP, destination system and UTC day. The flow lacks a shared request ID. The vendor supplies the host label.",
+      "refs": [
+        "E15/8431",
+        "E01/31497"
+      ],
+      "effects": {
+        "H3": "gap"
+      },
+      "kind": "candidate",
+      "utc": "2026-08-19T12:10:00Z",
+      "entity": "10.20.4.77"
+    },
+    {
+      "id": "R13@E06/p2",
+      "rule": "R13",
+      "title": "August billing reconciles to 14 created jobs",
+      "summary": "The invoice lists 14 jobs, five included and nine charged at INR 2,500. Creation triggers billing. A charge alone cannot establish who downloaded a file.",
+      "refs": [
+        "E06/p2",
+        "E02/17655",
+        "E02/19633",
+        "E02/19793",
+        "E02/19796",
+        "E02/19799",
+        "E02/19802",
+        "E02/19805",
+        "E02/19808",
+        "E02/19811",
+        "E02/19814",
+        "E02/19817",
+        "E02/19820",
+        "E02/21657",
+        "E02/23634"
+      ],
+      "effects": {},
+      "kind": "inference",
+      "utc": null,
+      "entity": "HelpDeskr / August billing"
+    }
+  ],
+  "hypotheses": {
+    "H1": {
+      "name": "Integration misuse",
+      "status": "MIXED",
+      "gap": "Operator identity, separate approvals and downstream payment execution remain unverified.",
+      "counts": {
+        "supports": 8,
+        "contradicts": 70,
+        "relevant": 2,
+        "gap": 1
+      }
+    },
+    "H2": {
+      "name": "Excessive access with a legitimate operational explanation",
+      "status": "MIXED",
+      "gap": "Confirm effective privileges at event time and seek contemporaneous change approvals.",
+      "counts": {
+        "supports": 71,
+        "contradicts": 1,
+        "relevant": 1,
+        "gap": 0
+      }
+    },
+    "H3": {
+      "name": "Distinct event contexts",
+      "status": "MIXED",
+      "gap": "A shared credential or address alone cannot establish a common operator across systems.",
+      "counts": {
+        "supports": 1,
+        "contradicts": 71,
+        "relevant": 0,
+        "gap": 4
+      }
+    }
+  },
+  "excluded": [],
+  "rules": {
+    "R01": "A register entry and log identify the same credential inside the same system.",
+    "R02": "A joined bank write exceeds the announced contact-field change and lacks a recorded approval.",
+    "R03": "The registered LedgerOne all-module scope exceeds the modules named in the onboarding request.",
+    "R04": "A joined email or phone write falls within the vendor\u2019s announced contact sync after its effective date.",
+    "R05": "A ticket read and a later storage read involve a key mentioned in chat. The transfer mechanism is unobserved.",
+    "R06": "A successful vendor PATCH and an API change share a unique request ID, vendor, field family, credential, address and UTC timestamp.",
+    "R07": "A user\u2019s finance export and the integration\u2019s export use different recorded principals and a separately documented audit context.",
+    "R08": "Expose missing proof or unavailable source coverage.",
+    "R09": "A registered HelpDeskr integration downloaded a created export from a vendor-listed high-confidence IP in its stated UTC date window.",
+    "R11": "A registered LedgerOne key downloaded an export from an E17 high-confidence address within its stated date range.",
+    "R12": "A build-labelled flow and API request share source address, destination system and UTC day. Candidate only.",
+    "R13": "Distinct successful August export creations reconcile to the reviewed E06 invoice count.",
+    "R10": "An export deletion returned an error. A final deletion receipt is needed to determine its later state."
+  },
+  "limits": [
+    "Interpretations apply to their cited event sets.",
+    "Raw record locators and original time bases are retained.",
+    "Attribution, fund movement and historical scope require additional records."
+  ]
+}
